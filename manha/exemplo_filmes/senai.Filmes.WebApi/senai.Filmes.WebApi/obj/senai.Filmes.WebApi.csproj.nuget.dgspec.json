@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Works\\senai_132\\senai-dev-1s2020\\sprint-2-backend\\tarde\\exemplo-filmes\\senai.Filmes.WebApi\\senai.Filmes.WebApi\\senai.Filmes.WebApi.csproj": {}
+    "E:\\Works\\senai_132\\SENAI-2-DEV - alunos\\sprint2-backend\\manha\\exemplo_filmes\\senai.Filmes.WebApi\\senai.Filmes.WebApi\\senai.Filmes.WebApi.csproj": {}
   },
   "projects": {
-    "E:\\Works\\senai_132\\senai-dev-1s2020\\sprint-2-backend\\tarde\\exemplo-filmes\\senai.Filmes.WebApi\\senai.Filmes.WebApi\\senai.Filmes.WebApi.csproj": {
+    "E:\\Works\\senai_132\\SENAI-2-DEV - alunos\\sprint2-backend\\manha\\exemplo_filmes\\senai.Filmes.WebApi\\senai.Filmes.WebApi\\senai.Filmes.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Works\\senai_132\\senai-dev-1s2020\\sprint-2-backend\\tarde\\exemplo-filmes\\senai.Filmes.WebApi\\senai.Filmes.WebApi\\senai.Filmes.WebApi.csproj",
+        "projectUniqueName": "E:\\Works\\senai_132\\SENAI-2-DEV - alunos\\sprint2-backend\\manha\\exemplo_filmes\\senai.Filmes.WebApi\\senai.Filmes.WebApi\\senai.Filmes.WebApi.csproj",
         "projectName": "senai.Filmes.WebApi",
-        "projectPath": "E:\\Works\\senai_132\\senai-dev-1s2020\\sprint-2-backend\\tarde\\exemplo-filmes\\senai.Filmes.WebApi\\senai.Filmes.WebApi\\senai.Filmes.WebApi.csproj",
+        "projectPath": "E:\\Works\\senai_132\\SENAI-2-DEV - alunos\\sprint2-backend\\manha\\exemplo_filmes\\senai.Filmes.WebApi\\senai.Filmes.WebApi\\senai.Filmes.WebApi.csproj",
         "packagesPath": "C:\\Users\\saulo\\.nuget\\packages\\",
-        "outputPath": "E:\\Works\\senai_132\\senai-dev-1s2020\\sprint-2-backend\\tarde\\exemplo-filmes\\senai.Filmes.WebApi\\senai.Filmes.WebApi\\obj\\",
+        "outputPath": "E:\\Works\\senai_132\\SENAI-2-DEV - alunos\\sprint2-backend\\manha\\exemplo_filmes\\senai.Filmes.WebApi\\senai.Filmes.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

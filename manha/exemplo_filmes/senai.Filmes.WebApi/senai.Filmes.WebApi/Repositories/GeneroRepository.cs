@@ -20,7 +20,7 @@ namespace senai.Filmes.WebApi.Repositories
         /// integrated security=true - Faz a autenticação com o usuário do sistema
         /// user Id=sa; pwd=sa@132 - Faz a autenticação com um usuário específico, passando o logon e a senha
         /// </summary>
-        private string StringConexao = "Data Source=DESKTOP-NJ6LHN1\\SQLDEVELOPER; initial catalog=Filmes_tarde; user Id=sa; pwd=sa@132;";
+        private string StringConexao = "Data Source=DESKTOP-NJ6LHN1\\SQLDEVELOPER; initial catalog=Filmes_manha; user Id=sa; pwd=sa@132;";
 
         /// <summary>
         /// Lista todos os gêneros
