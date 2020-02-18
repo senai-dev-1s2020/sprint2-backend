@@ -1,4 +1,4 @@
-USE Filmes_manha;
+USE Filmes_tarde;
 GO
 
 SELECT * FROM Generos;

@@ -1,7 +1,7 @@
-CREATE DATABASE Filmes_manha;
+CREATE DATABASE Filmes_tarde;
 GO
 
-USE Filmes_manha;
+USE Filmes_tarde;
 GO
 
 CREATE TABLE Generos(
