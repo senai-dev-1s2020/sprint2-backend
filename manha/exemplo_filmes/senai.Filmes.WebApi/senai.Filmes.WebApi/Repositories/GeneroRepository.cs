@@ -20,9 +20,9 @@ namespace senai.Filmes.WebApi.Repositories
         /// integrated security=true - Faz a autenticação com o usuário do sistema
         /// user Id=sa; pwd=sa@132 - Faz a autenticação com um usuário específico, passando o logon e a senha
         /// </summary>
-        //private string StringConexao = "Data Source=DESKTOP-NJ6LHN1\\SQLDEVELOPER; initial catalog=Filmes; integrated security=true;";
+        //private string stringConexao = "Data Source=DESKTOP-NJ6LHN1\\SQLDEVELOPER; initial catalog=Filmes_manha; integrated security=true;";
         private string stringConexao = "Data Source=DESKTOP-GCOFA7F\\SQLEXPRESS; initial catalog=Filmes_manha; user Id=sa; pwd=sa@132";
-        
+
         /// <summary>
         /// Atualiza um gênero passando o ID pelo corpo da requisição
         /// </summary>
@@ -84,7 +84,7 @@ namespace senai.Filmes.WebApi.Repositories
         /// Busca um gênero pelo ID
         /// </summary>
         /// <param name="id">ID do gênero que será buscado</param>
-        /// <returns>Retorna um gênero buscado ou null caso não seja encontrado</returns>
+        /// <returns>Um gênero buscado ou null caso não seja encontrado</returns>
         public GeneroDomain BuscarPorId(int id)
         {
             // Declara a conexão passando a string de conexão
@@ -96,7 +96,7 @@ namespace senai.Filmes.WebApi.Repositories
                 // Abre a conexão com o banco de dados
                 con.Open();
 
-                // Declara o SqlDataReader fazer a leitura no banco de dados
+                // Declara o SqlDataReader para receber os dados do banco de dados
                 SqlDataReader rdr;
 
                 // Declara o SqlCommand passando o comando a ser executado e a conexão
@@ -105,13 +105,13 @@ namespace senai.Filmes.WebApi.Repositories
                     // Passa o valor do parâmetro
                     cmd.Parameters.AddWithValue("@ID", id);
 
-                    // Executa a query
+                    // Executa a query e armazena os dados no rdr
                     rdr = cmd.ExecuteReader();
 
-                    // Caso a o resultado da query possua registro
+                    // Caso o resultado da query possua registro
                     if (rdr.Read())
                     {
-                        // Cria um objeto genero
+                        // Instancia um objeto genero
                         GeneroDomain genero = new GeneroDomain
                         {
                             // Atribui à propriedade IdGenero o valor da coluna "IdGenero" da tabela do banco
@@ -152,17 +152,17 @@ namespace senai.Filmes.WebApi.Repositories
                 // Declara a query que será executada passando o valor como parâmetro, evitando assim os problemas acima
                 string queryInsert = "INSERT INTO Generos(Nome) VALUES (@Nome)";
 
-                // Declara o comando passando a query e a conexão
-                SqlCommand cmd = new SqlCommand(queryInsert, con);
+                using (SqlCommand cmd = new SqlCommand(queryInsert, con))
+                {
+                    // Passa o valor do parâmetro
+                    cmd.Parameters.AddWithValue("@Nome", genero.Nome);
 
-                // Passa o valor do parâmetro
-                cmd.Parameters.AddWithValue("@Nome", genero.Nome);
+                    // Abre a conexão com o banco de dados
+                    con.Open();
 
-                // Abre a conexão com o banco de dados
-                con.Open();
-
-                // Executa o comando
-                cmd.ExecuteNonQuery();
+                    // Executa o comando
+                    cmd.ExecuteNonQuery();
+                }
             }
         }
 
@@ -196,7 +196,7 @@ namespace senai.Filmes.WebApi.Repositories
         /// <summary>
         /// Lista todos os gêneros
         /// </summary>
-        /// <returns>Retorna uma lista de gêneros</returns>
+        /// <returns>Uma lista de gêneros</returns>
         public List<GeneroDomain> Listar()
         {
             // Cria uma lista generos onde serão armazenados os dados
@@ -206,7 +206,7 @@ namespace senai.Filmes.WebApi.Repositories
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
                 // Declara a instrução a ser executada
-                string querySelectAll = "SELECT IdGenero, Nome from Generos";
+                string querySelectAll = "SELECT IdGenero, Nome FROM Generos";
 
                 // Abre a conexão com o banco de dados
                 con.Open();
@@ -217,13 +217,13 @@ namespace senai.Filmes.WebApi.Repositories
                 // Declara o SqlCommand passando o comando a ser executado e a conexão
                 using (SqlCommand cmd = new SqlCommand(querySelectAll, con))
                 {
-                    // Executa a query
+                    // Executa a query e armazena os dados no rdr
                     rdr = cmd.ExecuteReader();
 
-                    // Enquanto houver registros para ler, o laço se repete
+                    // Enquanto houver registros para serem lidos no rdr, o laço se repete
                     while (rdr.Read())
                     {
-                        // Cria um objeto genero do tipo GeneroDomain
+                        // Instancia um objeto genero do tipo GeneroDomain
                         GeneroDomain genero = new GeneroDomain
                         {
                             // Atribui à propriedade IdGenero o valor da primeira coluna da tabela do banco
@@ -233,7 +233,7 @@ namespace senai.Filmes.WebApi.Repositories
                             Nome = rdr["Nome"].ToString()
                         };
 
-                        // Adiciona o genero criado à tabela generos
+                        // Adiciona o genero criado à lista generos
                         generos.Add(genero);
                     }
                 }

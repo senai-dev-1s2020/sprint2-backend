@@ -14,14 +14,21 @@ namespace senai.Filmes.WebApi.Interfaces
         /// <summary>
         /// Lista todos os gêneros
         /// </summary>
-        /// <returns>Retorna uma lista de gêneros</returns>
+        /// <returns>Uma lista de gêneros</returns>
         List<GeneroDomain> Listar();
+
+        /// <summary>
+        /// Busca um gênero através do ID
+        /// </summary>
+        /// <param name="id">ID do gênero que será buscado</param>
+        /// <returns>Um objeto genero que foi buscado</returns>
+        GeneroDomain BuscarPorId(int id);
 
         /// <summary>
         /// Cadastra um novo gênero
         /// </summary>
-        /// <param name="genero">Objeto genero que será cadastrado</param>
-        void Cadastrar(GeneroDomain genero);
+        /// <param name="novoGenero">Objeto novoGenero que será cadastrado</param>
+        void Cadastrar(GeneroDomain novoGenero);
 
         /// <summary>
         /// Atualiza um gênero existente passando o id pelo corpo da requisição
@@ -41,12 +48,5 @@ namespace senai.Filmes.WebApi.Interfaces
         /// </summary>
         /// <param name="id">ID do gênero que será deletado</param>
         void Deletar(int id);
-
-        /// <summary>
-        /// Busca um gênero através do ID
-        /// </summary>
-        /// <param name="id">ID do gênero que será buscado</param>
-        /// <returns>Retorna um genero</returns>
-        GeneroDomain BuscarPorId(int id);
     }
 }

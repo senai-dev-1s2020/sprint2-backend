@@ -40,3 +40,17 @@ C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\02_ado.net\Exemplo-Fi
 C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\02_ado.net\Exemplo-Filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.RazorTargetAssemblyInfo.cache
 C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\02_ado.net\Exemplo-Filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.dll
 C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\02_ado.net\Exemplo-Filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.pdb
+E:\Works\senai_132\SENAI-2-DEV - alunos\sprint2-backend\manha\exemplo_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+E:\Works\senai_132\SENAI-2-DEV - alunos\sprint2-backend\manha\exemplo_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\bin\Debug\netcoreapp2.1\senai.Filmes.WebApi.deps.json
+E:\Works\senai_132\SENAI-2-DEV - alunos\sprint2-backend\manha\exemplo_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\bin\Debug\netcoreapp2.1\senai.Filmes.WebApi.runtimeconfig.json
+E:\Works\senai_132\SENAI-2-DEV - alunos\sprint2-backend\manha\exemplo_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\bin\Debug\netcoreapp2.1\senai.Filmes.WebApi.runtimeconfig.dev.json
+E:\Works\senai_132\SENAI-2-DEV - alunos\sprint2-backend\manha\exemplo_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\bin\Debug\netcoreapp2.1\senai.Filmes.WebApi.dll
+E:\Works\senai_132\SENAI-2-DEV - alunos\sprint2-backend\manha\exemplo_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\bin\Debug\netcoreapp2.1\senai.Filmes.WebApi.pdb
+E:\Works\senai_132\SENAI-2-DEV - alunos\sprint2-backend\manha\exemplo_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.csprojAssemblyReference.cache
+E:\Works\senai_132\SENAI-2-DEV - alunos\sprint2-backend\manha\exemplo_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.RazorAssemblyInfo.cache
+E:\Works\senai_132\SENAI-2-DEV - alunos\sprint2-backend\manha\exemplo_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.RazorAssemblyInfo.cs
+E:\Works\senai_132\SENAI-2-DEV - alunos\sprint2-backend\manha\exemplo_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.AssemblyInfoInputs.cache
+E:\Works\senai_132\SENAI-2-DEV - alunos\sprint2-backend\manha\exemplo_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.AssemblyInfo.cs
+E:\Works\senai_132\SENAI-2-DEV - alunos\sprint2-backend\manha\exemplo_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.RazorTargetAssemblyInfo.cache
+E:\Works\senai_132\SENAI-2-DEV - alunos\sprint2-backend\manha\exemplo_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.dll
+E:\Works\senai_132\SENAI-2-DEV - alunos\sprint2-backend\manha\exemplo_filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.pdb

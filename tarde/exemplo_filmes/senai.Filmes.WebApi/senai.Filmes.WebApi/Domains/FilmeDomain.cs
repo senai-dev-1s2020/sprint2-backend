@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-/// <summary>
-/// Classe que representa a tabela Filmes
-/// </summary>
 namespace senai.Filmes.WebApi.Domains
 {
+    /// <summary>
+    /// Classe que representa a tabela Filmes
+    /// </summary>
     public class FilmeDomain
     {
         public int IdFilme { get; set; }

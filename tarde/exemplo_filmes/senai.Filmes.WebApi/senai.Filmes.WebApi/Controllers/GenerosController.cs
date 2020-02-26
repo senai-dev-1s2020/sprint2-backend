@@ -69,7 +69,7 @@ namespace senai.Filmes.WebApi.Controllers
         /// Busca um gênero através do seu ID
         /// </summary>
         /// <param name="id">ID do gênero buscado</param>
-        /// <returns>Retorna um gênero buscado</returns>
+        /// <returns>Retorna um gênero buscado ou NotFound caso nenhum seja encontrado</returns>
         /// dominio/api/Generos/1
         [HttpGet("{id}")]
         public IActionResult GetById(int id)

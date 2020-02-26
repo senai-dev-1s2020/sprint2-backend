@@ -1,0 +1,17 @@
+Criar um CRUD completo para Filmes, com:
+
+FilmesController
+IFilmeRepository
+FilmeRepository
+
+- Listar todos os filmes                             //dominio/api/filmes
+- Listar um filme pelo id		             //dominio/api/filmes/1
+- Cadastrar um novo filme		             //dominio/api/filmes
+- Atualizar um filme (Titulo) existente	    	     //dominio/api/filmes/1
+- Deletar um filme pelo id		             //dominio/api/filmes/1
+
+Extra
+- Ao listar os filmes, mostrar também os respectivos gêneros
+- Ao atualizar um filme, ser possível também alterar o gênero ao qual o filme pertence no mesmo endpoint
+- Criar um endpoint para buscar um (ou mais de um) filme pelo Titulo, passando este titulo no corpo da requisição
+- Classificar o retorno do endpoint acima por ordem alfabética (Z - A)
