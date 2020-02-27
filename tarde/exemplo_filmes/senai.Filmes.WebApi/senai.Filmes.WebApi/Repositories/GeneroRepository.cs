@@ -20,7 +20,7 @@ namespace senai.Filmes.WebApi.Repositories
         /// integrated security=true - Faz a autenticação com o usuário do sistema
         /// user Id=sa; pwd=sa@132 - Faz a autenticação com um usuário específico, passando o logon e a senha
         /// </summary>
-        //private string stringConexao = "Data Source=DESKTOP-NJ6LHN1\\SQLDEVELOPER; initial catalog=Filmes_tarde; integrated security=true;";
+        //private string stringConexao = "Data Source=DESKTOP-NJ6LHN1\\SQLDEVELOPER; initial catalog=Filmes_manha; integrated security=true;";
         private string stringConexao = "Data Source=DESKTOP-GCOFA7F\\SQLEXPRESS; initial catalog=Filmes_tarde; user Id=sa; pwd=sa@132";
 
         /// <summary>
@@ -152,6 +152,7 @@ namespace senai.Filmes.WebApi.Repositories
                 // Declara a query que será executada passando o valor como parâmetro, evitando assim os problemas acima
                 string queryInsert = "INSERT INTO Generos(Nome) VALUES (@Nome)";
 
+                // Declara o SqlCommand passando o comando a ser executado e a conexão
                 using (SqlCommand cmd = new SqlCommand(queryInsert, con))
                 {
                     // Passa o valor do parâmetro

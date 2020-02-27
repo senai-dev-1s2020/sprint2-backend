@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -12,6 +13,8 @@ namespace senai.Filmes.WebApi.Domains
     {
         public int IdGenero { get; set; }
 
+        // Define que o nome do gênero é obrigatório
+        [Required(ErrorMessage = "Informe o nome do gênero")]
         public string Nome { get; set; }
     }
 }

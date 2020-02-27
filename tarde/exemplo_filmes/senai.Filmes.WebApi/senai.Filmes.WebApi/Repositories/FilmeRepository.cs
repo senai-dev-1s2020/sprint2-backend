@@ -95,18 +95,18 @@ namespace senai.Filmes.WebApi.Repositories
                             // Atribui à propriedade IdGenero o valor da coluna "IdGenero" da tabela do banco
                             ,IdGenero = Convert.ToInt32(rdr["IdGenero"])
 
-                            ,
-                            Genero = new GeneroDomain
+                            // Instancia um novo objeto do tipo GeneroDomain
+                            ,Genero = new GeneroDomain
                             {
                                 // Atribui à propriedade IdGenero o valor da coluna IdGenero da tabela do banco de dados
                                 IdGenero = Convert.ToInt32(rdr["IdGenero"])
 
                                 // Atribui à propriedade Nome o valor da coluna Nome da tabela do banco de dados
-                                ,
-                                Nome = rdr["Nome"].ToString()
+                                ,Nome = rdr["Nome"].ToString()
                             }
                         };
 
+                        // Retorna o filme buscado
                         return filme;
                     }
 
@@ -158,22 +158,19 @@ namespace senai.Filmes.WebApi.Repositories
                             IdFilme = Convert.ToInt32(rdr["IdFilme"])
 
                             // Atribui à propriedade Titulo o valor da coluna Titulo da tabela do banco de dados
-                            ,
-                            Titulo = rdr["Titulo"].ToString()
+                            ,Titulo = rdr["Titulo"].ToString()
 
                             // Atribui à propriedade IdGenero o valor da coluna IdGenero da tabela do banco de dados
-                            ,
-                            IdGenero = Convert.ToInt32(rdr["IdGenero"])
+                            ,IdGenero = Convert.ToInt32(rdr["IdGenero"])
 
-                            ,
-                            Genero = new GeneroDomain
+                            // Instancia um novo objeto do tipo GeneroDomain 
+                            ,Genero = new GeneroDomain
                             {
                                 // Atribui à propriedade IdGenero o valor da coluna IdGenero da tabela do banco de dados
                                 IdGenero = Convert.ToInt32(rdr["IdGenero"])
 
                                 // Atribui à propriedade Nome o valor da coluna Nome da tabela do banco de dados
-                                ,
-                                Nome = rdr["Nome"].ToString()
+                                ,Nome = rdr["Nome"].ToString()
                             }
                         };
 
@@ -193,7 +190,7 @@ namespace senai.Filmes.WebApi.Repositories
         /// <param name="novoFilme">Objeto novoFilme que será cadastrado</param>
         public void Cadastrar(FilmeDomain novoFilme)
         {
-
+            // Declara a SqlConnection passando a string de conexão
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
                 // Declara a query que será executada
@@ -286,6 +283,7 @@ namespace senai.Filmes.WebApi.Repositories
                             // Atribui à propriedade IdGenero o valor da coluna IdGenero da tabela do banco de dados
                             ,IdGenero = Convert.ToInt32(rdr["IdGenero"])
 
+                            //Instancia um novo objeto do tipo GeneroDomain
                             ,Genero = new GeneroDomain
                             {
                                 // Atribui à propriedade IdGenero o valor da coluna IdGenero da tabela do banco de dados

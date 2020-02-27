@@ -179,6 +179,11 @@ namespace senai.Peoples.WebApi.Controllers
             return Ok(_funcionarioRepository.BuscarPorNome(busca));
         }
 
+        /// <summary>
+        /// Lista todos os funcionários com os nomes completos
+        /// </summary>
+        /// <returns>Retorna uma lista de funcionários</returns>
+        /// dominio/api/Funcionarios/nomescompletos
         [HttpGet("nomescompletos")]
         public IActionResult GetFullName()
         {
@@ -192,6 +197,7 @@ namespace senai.Peoples.WebApi.Controllers
         /// </summary>
         /// <param name="ordem">String que define a ordenação (crescente ou descrescente)</param>
         /// <returns>Retorna uma lista ordenada de funcionários</returns>
+        /// dominio/api/Funcionarios/ordenacao/asc
         [HttpGet("ordenacao/{ordem}")]
         public IActionResult GetOrderBy(string ordem)
         {

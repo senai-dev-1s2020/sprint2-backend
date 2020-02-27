@@ -152,6 +152,7 @@ namespace senai.Filmes.WebApi.Repositories
                 // Declara a query que será executada passando o valor como parâmetro, evitando assim os problemas acima
                 string queryInsert = "INSERT INTO Generos(Nome) VALUES (@Nome)";
 
+                // Declara o SqlCommand passando o comando a ser executado e a conexão
                 using (SqlCommand cmd = new SqlCommand(queryInsert, con))
                 {
                     // Passa o valor do parâmetro

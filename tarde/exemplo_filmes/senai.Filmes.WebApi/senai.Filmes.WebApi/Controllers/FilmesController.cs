@@ -59,8 +59,10 @@ namespace senai.Filmes.WebApi.Controllers
         [HttpPost]
         public IActionResult Post(FilmeDomain novoFilme)
         {
+            // Faz a chamada para o método .Cadastrar();
             _filmeRepository.Cadastrar(novoFilme);
 
+            // Retorna o status code 201 - Created com a URI e o objeto cadastrado
             return Created("http://localhost:5000/api/Filmes", novoFilme);
         }
 
@@ -91,7 +93,7 @@ namespace senai.Filmes.WebApi.Controllers
         /// Atualiza um filme existente
         /// </summary>
         /// <param name="id">ID do filme que será atualizado</param>
-        /// <param name="filmeAtualizado">Objeto filme que será atualizado</param>
+        /// <param name="filmeAtualizado">Objeto filmeAtualizado que será atualizado</param>
         /// <returns>Retorna um status code</returns>
         /// dominio/api/Filmes/1
         [HttpPut("{id}")]

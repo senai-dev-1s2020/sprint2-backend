@@ -20,3 +20,12 @@ CREATE TABLE Filmes(
 	,IdGenero	INT FOREIGN KEY REFERENCES Generos (IdGenero)
 );
 GO
+
+-- Cria a tabela Usuarios
+CREATE TABLE Usuarios(
+	IdUsuario	INT PRIMARY KEY IDENTITY
+	,Email		VARCHAR (255) NOT NULL UNIQUE
+	,Senha		VARCHAR (255) NOT NULL
+	,Permissao	VARCHAR (255) NOT NULL
+);
+GO

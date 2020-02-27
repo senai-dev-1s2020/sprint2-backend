@@ -16,7 +16,8 @@ namespace senai.Peoples.WebApi.Repositories
         /// <summary>
         /// String de conexão com o banco de dados que recebe os parâmetros
         /// </summary>
-        private string stringConexao = "Data Source=DESKTOP-NJ6LHN1\\SQLDEVELOPER; initial catalog=Peoples; integrated security=true;";
+        //private string stringConexao = "Data Source=DESKTOP-NJ6LHN1\\SQLDEVELOPER; initial catalog=Peoples; integrated security=true;";
+        private string stringConexao = "Data Source=DESKTOP-GCOFA7F\\SQLEXPRESS; initial catalog=Peoples; user Id=sa; pwd=sa@132";
 
         /// <summary>
         /// Atualiza um funcionário existente
@@ -51,6 +52,10 @@ namespace senai.Peoples.WebApi.Repositories
             }
         }
 
+        /// <summary>
+        /// Lista todos os funcionários com os nomes completos
+        /// </summary>
+        /// <returns>Retorna uma lista de funcionários</returns>
         public List<FuncionarioDomain> ListarNomeCompleto()
         {
             // Cria uma lista funcionarios onde serão armazenados os dados
@@ -165,6 +170,11 @@ namespace senai.Peoples.WebApi.Repositories
             }
         }
 
+        /// <summary>
+        /// Busca uma lista de funcionários através do nome
+        /// </summary>
+        /// <param name="nome">Palavra-chave que será utilizada na busca</param>
+        /// <returns>Retorna uma lista de funcionários encontrados</returns>
         public List<FuncionarioDomain> BuscarPorNome(string nome)
         {
             // Cria uma lista funcionarios onde serão armazenados os dados
@@ -276,6 +286,10 @@ namespace senai.Peoples.WebApi.Repositories
             }
         }
 
+        /// <summary>
+        /// Lista todos os funcionários
+        /// </summary>
+        /// <returns>Retorna uma lista de funcionários</returns>
         public List<FuncionarioDomain> Listar()
         {
             // Cria uma lista funcionarios onde serão armazenados os dados

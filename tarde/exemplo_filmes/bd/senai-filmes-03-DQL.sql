@@ -10,3 +10,9 @@ SELECT * FROM Filmes;
 
 -- Lista todos os gêneros definindo as colunas exibidas
 SELECT IdGenero, Nome from Generos;
+
+-- Lista todos os usuários
+SELECT * FROM Usuarios
+
+-- Busca um usuário através do email e da senha
+SELECT IdUsuario, Email, Senha, Permissao FROM Usuarios WHERE Email = 'saulo@email.com' AND Senha = '123';

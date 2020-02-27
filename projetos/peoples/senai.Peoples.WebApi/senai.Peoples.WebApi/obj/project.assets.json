@@ -12569,11 +12569,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Works\\senai_132\\senai-dev-1s2020\\sprint-2-backend\\exercicios\\peoples\\senai.Peoples.WebApi\\senai.Peoples.WebApi\\senai.Peoples.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\saulo\\Downloads\\senai-dev-1s2020-alunos\\sprint2-backend\\projetos\\peoples\\senai.Peoples.WebApi\\senai.Peoples.WebApi\\senai.Peoples.WebApi.csproj",
       "projectName": "senai.Peoples.WebApi",
-      "projectPath": "E:\\Works\\senai_132\\senai-dev-1s2020\\sprint-2-backend\\exercicios\\peoples\\senai.Peoples.WebApi\\senai.Peoples.WebApi\\senai.Peoples.WebApi.csproj",
+      "projectPath": "C:\\Users\\saulo\\Downloads\\senai-dev-1s2020-alunos\\sprint2-backend\\projetos\\peoples\\senai.Peoples.WebApi\\senai.Peoples.WebApi\\senai.Peoples.WebApi.csproj",
       "packagesPath": "C:\\Users\\saulo\\.nuget\\packages\\",
-      "outputPath": "E:\\Works\\senai_132\\senai-dev-1s2020\\sprint-2-backend\\exercicios\\peoples\\senai.Peoples.WebApi\\senai.Peoples.WebApi\\obj\\",
+      "outputPath": "C:\\Users\\saulo\\Downloads\\senai-dev-1s2020-alunos\\sprint2-backend\\projetos\\peoples\\senai.Peoples.WebApi\\senai.Peoples.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12615,7 +12615,6 @@
             "version": "[2.1.2, )"
           },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
@@ -12630,16 +12629,10 @@
           }
         },
         "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48"
+          "net461"
         ],
         "assetTargetFallback": true,
-        "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "warn": true
       }
     }
   }
