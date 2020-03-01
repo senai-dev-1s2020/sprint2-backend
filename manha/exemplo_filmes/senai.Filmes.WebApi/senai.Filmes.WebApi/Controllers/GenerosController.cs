@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using senai.Filmes.WebApi.Domains;
@@ -55,6 +56,7 @@ namespace senai.Filmes.WebApi.Controllers
         /// <param name="novoGenero">Objeto genero recebido na requisição</param>
         /// <returns>Retorna um status code 201 (created)</returns>
         /// dominio/api/Generos
+        [Authorize(Roles = "Administrador")]    // Define que apenas o Administrador pode acessar o endpoint
         [HttpPost]
         public IActionResult Post(GeneroDomain novoGenero)
         {
@@ -94,6 +96,7 @@ namespace senai.Filmes.WebApi.Controllers
         /// <param name="generoAtualizado">Objeto gênero que será atualizado</param>
         /// <returns>Retorna um status code 204 - No Content</returns>
         /// dominio/api/Generos
+        [Authorize(Roles = "Administrador")]    // Define que apenas o Administrador pode acessar o endpoint
         [HttpPut]
         public IActionResult PutIdCorpo(GeneroDomain generoAtualizado)
         {
@@ -140,6 +143,7 @@ namespace senai.Filmes.WebApi.Controllers
         /// <param name="generoAtualizado">Objeto gênero que será atualizado</param>
         /// <returns>Retorna um status code</returns>
         /// dominio/api/Generos/1
+        [Authorize(Roles = "Administrador")]    // Define que apenas o Administrador pode acessar o endpoint
         [HttpPut("{id}")]
         public IActionResult PutIdUrl(int id, GeneroDomain generoAtualizado)
         {
@@ -184,6 +188,7 @@ namespace senai.Filmes.WebApi.Controllers
         /// <param name="id">ID do gênero que será deletado</param>
         /// <returns>Retorna um status code com uma mensagem personalizada</returns>
         /// dominio/api/Generos/1
+        [Authorize(Roles = "Administrador")]    // Define que apenas o Administrador pode acessar o endpoint
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {

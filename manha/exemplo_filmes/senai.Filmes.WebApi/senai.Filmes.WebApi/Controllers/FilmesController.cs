@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using senai.Filmes.WebApi.Domains;
@@ -56,6 +57,7 @@ namespace senai.Filmes.WebApi.Controllers
         /// <param name="novoFilme">Objeto novoFilme que será cadastrado</param>
         /// <returns>Retorna os dados que foram enviados para cadastro e um status code 201 - Created</returns>
         /// dominio/api/Filmes
+        [Authorize(Roles = "Administrador")]    // Define que apenas o Administrador pode acessar o endpoint
         [HttpPost]
         public IActionResult Post(FilmeDomain novoFilme)
         {
@@ -96,6 +98,7 @@ namespace senai.Filmes.WebApi.Controllers
         /// <param name="filmeAtualizado">Objeto filmeAtualizado que será atualizado</param>
         /// <returns>Retorna um status code</returns>
         /// dominio/api/Filmes/1
+        [Authorize(Roles = "Administrador")]    // Define que apenas o Administrador pode acessar o endpoint
         [HttpPut("{id}")]
         public IActionResult Put(int id, FilmeDomain filmeAtualizado)
         {
@@ -141,6 +144,7 @@ namespace senai.Filmes.WebApi.Controllers
         /// <param name="id">ID do filme que será deletado</param>
         /// <returns>Retorna um status code com uma mensagem de sucesso ou erro</returns>
         /// dominio/api/Filmes/1
+        [Authorize(Roles = "Administrador")]    // Define que apenas o Administrador pode acessar o endpoint
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
