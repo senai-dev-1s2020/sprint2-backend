@@ -1,0 +1,16 @@
+- Implementar autenticação e autorização no Projeto Peoples
+
+- Criar CRUD para TipoUsuario e Usuario
+
+- Permissões
+
+Funcionarios
+	Listar, BuscarPorId, Cadastrar, BuscarPorNome - Comum
+	Atualizar, Deletar, ListarNomesCompletos, ListarOrdenado - Adm
+
+Usuario
+	Cadastrar - Público
+	Listar, BuscarPorId, Atualizar, Deletar - Adm
+
+TipoUsuario
+	Listar, BuscarPorId, Atualizar, Deletar - Adm
