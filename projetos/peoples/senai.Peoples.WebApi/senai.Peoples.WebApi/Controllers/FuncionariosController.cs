@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using senai.Peoples.WebApi.Domains;
@@ -22,6 +23,9 @@ namespace senai.Peoples.WebApi.Controllers
 
     // Define que é um controlador de API
     [ApiController]
+
+    // Define que somente usuários logados possam acessar os endpoints
+    [Authorize]
     public class FuncionariosController : ControllerBase
     {
         /// <summary>
@@ -100,6 +104,7 @@ namespace senai.Peoples.WebApi.Controllers
         /// <param name="funcionarioAtualizado">Objeto funcionarioAtualizado que será atualizado</param>
         /// <returns>Retorna um status code</returns>
         /// dominio/api/Funcionarios/1
+        [Authorize(Roles = "1")]    // Somente o tipo de usuário 1 (administrador) pode acessar o endpoint
         [HttpPut("{id}")]
         public IActionResult Put(int id, FuncionarioDomain funcionarioAtualizado)
         {
@@ -145,6 +150,7 @@ namespace senai.Peoples.WebApi.Controllers
         /// <param name="id">ID do funcionário que será deletado</param>
         /// <returns>Retorna um status code com uma mensagem de sucesso ou erro</returns>
         /// dominio/api/Funcionarios/1
+        [Authorize(Roles = "1")]    // Somente o tipo de usuário 1 (administrador) pode acessar o endpoint
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
@@ -184,6 +190,7 @@ namespace senai.Peoples.WebApi.Controllers
         /// </summary>
         /// <returns>Retorna uma lista de funcionários</returns>
         /// dominio/api/Funcionarios/nomescompletos
+        [Authorize(Roles = "1")]    // Somente o tipo de usuário 1 (administrador) pode acessar o endpoint
         [HttpGet("nomescompletos")]
         public IActionResult GetFullName()
         {
@@ -198,6 +205,7 @@ namespace senai.Peoples.WebApi.Controllers
         /// <param name="ordem">String que define a ordenação (crescente ou descrescente)</param>
         /// <returns>Retorna uma lista ordenada de funcionários</returns>
         /// dominio/api/Funcionarios/ordenacao/asc
+        [Authorize(Roles = "1")]    // Somente o tipo de usuário 1 (administrador) pode acessar o endpoint
         [HttpGet("ordenacao/{ordem}")]
         public IActionResult GetOrderBy(string ordem)
         {
