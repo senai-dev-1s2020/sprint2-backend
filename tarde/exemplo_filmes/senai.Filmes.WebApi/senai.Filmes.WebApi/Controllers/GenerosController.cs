@@ -55,8 +55,10 @@ namespace senai.Filmes.WebApi.Controllers
         /// </summary>
         /// <param name="novoGenero">Objeto genero recebido na requisição</param>
         /// <returns>Retorna um status code 201 (created)</returns>
+        /// <response code="201">Retorna apenas o status code Created</response>
         /// dominio/api/Generos
-        [Authorize(Roles = "Administrador")]    // Define que apenas o Administrador pode acessar o endpoint
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [Authorize(Roles = "Administrador")]
         [HttpPost]
         public IActionResult Post(GeneroDomain novoGenero)
         {
@@ -96,7 +98,7 @@ namespace senai.Filmes.WebApi.Controllers
         /// <param name="generoAtualizado">Objeto gênero que será atualizado</param>
         /// <returns>Retorna um status code 204 - No Content</returns>
         /// dominio/api/Generos
-        [Authorize(Roles = "Administrador")]    // Define que apenas o Administrador pode acessar o endpoint
+        [Authorize(Roles = "Administrador")]
         [HttpPut]
         public IActionResult PutIdCorpo(GeneroDomain generoAtualizado)
         {
@@ -143,7 +145,7 @@ namespace senai.Filmes.WebApi.Controllers
         /// <param name="generoAtualizado">Objeto gênero que será atualizado</param>
         /// <returns>Retorna um status code</returns>
         /// dominio/api/Generos/1
-        [Authorize(Roles = "Administrador")]    // Define que apenas o Administrador pode acessar o endpoint
+        [Authorize(Roles = "Administrador")]
         [HttpPut("{id}")]
         public IActionResult PutIdUrl(int id, GeneroDomain generoAtualizado)
         {
@@ -188,7 +190,7 @@ namespace senai.Filmes.WebApi.Controllers
         /// <param name="id">ID do gênero que será deletado</param>
         /// <returns>Retorna um status code com uma mensagem personalizada</returns>
         /// dominio/api/Generos/1
-        [Authorize(Roles = "Administrador")]    // Define que apenas o Administrador pode acessar o endpoint
+        [Authorize(Roles = "Administrador")]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {

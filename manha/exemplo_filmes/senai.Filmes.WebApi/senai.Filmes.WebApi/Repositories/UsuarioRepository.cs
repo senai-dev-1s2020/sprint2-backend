@@ -16,8 +16,7 @@ namespace senai.Filmes.WebApi.Repositories
         /// <summary>
         /// String de conexão com o banco de dados que recebe os parâmetros
         /// </summary>
-        //private string stringConexao = "Data Source=DESKTOP-NJ6LHN1\\SQLDEVELOPER; initial catalog=Filmes_manha; integrated security=true;";
-        private string stringConexao = "Data Source=DESKTOP-GCOFA7F\\SQLEXPRESS; initial catalog=Filmes_manha; user Id=sa; pwd=sa@132";
+        private string stringConexao = "Data Source=DESKTOP-NJ6LHN1\\SQLDEVELOPER; initial catalog=Filmes; integrated security=true;";
 
         /// <summary>
         /// Valida o usuário

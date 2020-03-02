@@ -40,3 +40,5 @@ C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\02_ado.net\Exemplo-Fi
 C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\02_ado.net\Exemplo-Filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.RazorTargetAssemblyInfo.cache
 C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\02_ado.net\Exemplo-Filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.dll
 C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\02_ado.net\Exemplo-Filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.pdb
+E:\Works\senai_132\senai-dev-1s2020\sprint-2-backend\02_ado.net\Exemplo-Filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\bin\Debug\netcoreapp2.1\senai.Filmes.WebApi.xml
+E:\Works\senai_132\senai-dev-1s2020\sprint-2-backend\02_ado.net\Exemplo-Filmes\senai.Filmes.WebApi\senai.Filmes.WebApi\obj\Debug\netcoreapp2.1\senai.Filmes.WebApi.xml

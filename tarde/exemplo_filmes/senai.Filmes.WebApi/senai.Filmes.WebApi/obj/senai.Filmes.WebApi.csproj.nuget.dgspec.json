@@ -66,6 +66,10 @@
               "target": "Package",
               "version": "[2.1.10, )"
             },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.0, )"
