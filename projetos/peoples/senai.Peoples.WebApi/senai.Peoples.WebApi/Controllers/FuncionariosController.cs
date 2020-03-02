@@ -44,9 +44,22 @@ namespace senai.Peoples.WebApi.Controllers
         /// <summary>
         /// Lista todos os funcionarios
         /// </summary>
-        /// <returns>Retorna uma lista de funcionarios e um status code 200 - Ok</returns>
+        /// <remarks>
+        /// Sample response:
+        /// 
+        ///     {
+        ///         "idFuncionario": 0,
+        ///         "nome": "Name",
+        ///         "sobrenome": "LastName",
+        ///         "dataNascimento": "YYYY-MM-DDTHH:MM:SS"
+        ///     }
+        ///     
+        /// </remarks>
+        /// <returns>Uma lista de funcionarios e um status code 200 - Ok</returns>
+        /// <response code="200">Retorna uma lista de funcionários</response>
         /// dominio/api/Funcionarios
         [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public IActionResult Get()
         {
             // Faz a chamada para o método .Listar()

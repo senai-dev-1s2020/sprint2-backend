@@ -1,0 +1,543 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>senai.Peoples.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:senai.Peoples.WebApi.Controllers.FuncionariosController">
+            <summary>
+            Controller responsável pelos endpoints referentes aos funcionarios
+            </summary>
+        </member>
+        <member name="P:senai.Peoples.WebApi.Controllers.FuncionariosController._funcionarioRepository">
+            <summary>
+            Cria um objeto _funcionarioRepository que irá receber todos os métodos definidos na interface
+            </summary>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.FuncionariosController.#ctor">
+            <summary>
+            Instancia este objeto para que haja a referência aos métodos no repositório
+            </summary>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.FuncionariosController.Get">
+            <summary>
+            Lista todos os funcionarios
+            </summary>
+            <remarks>
+            Sample response:
+            
+                {
+                    "idFuncionario": 0,
+                    "nome": "Name",
+                    "sobrenome": "LastName",
+                    "dataNascimento": "YYYY-MM-DDTHH:MM:SS"
+                }
+                
+            </remarks>
+            <returns>Uma lista de funcionarios e um status code 200 - Ok</returns>
+            <response code="200">Retorna uma lista de funcionários</response>
+            dominio/api/Funcionarios
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.FuncionariosController.Post(senai.Peoples.WebApi.Domains.FuncionarioDomain)">
+            <summary>
+            Cadastra um novo funcionário
+            </summary>
+            <param name="novoFuncionario">Objeto novoFuncionario que será cadastrado</param>
+            <returns>Retorna os dados que foram enviados para cadastro e um status code 201 - Created</returns>
+            dominio/api/Funcionarios
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.FuncionariosController.GetById(System.Int32)">
+            <summary>
+            Busca um funcionário através do seu ID
+            </summary>
+            <param name="id">ID do funcionário que será buscado</param>
+            <returns>Retorna um funcionário buscado ou NotFound caso nenhum seja encontrado</returns>
+            dominio/api/Funcionarios/1
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.FuncionariosController.Put(System.Int32,senai.Peoples.WebApi.Domains.FuncionarioDomain)">
+            <summary>
+            Atualiza um funcionário existente
+            </summary>
+            <param name="id">ID do funcionário que será atualizado</param>
+            <param name="funcionarioAtualizado">Objeto funcionarioAtualizado que será atualizado</param>
+            <returns>Retorna um status code</returns>
+            dominio/api/Funcionarios/1
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.FuncionariosController.Delete(System.Int32)">
+            <summary>
+            Deleta um funcionário
+            </summary>
+            <param name="id">ID do funcionário que será deletado</param>
+            <returns>Retorna um status code com uma mensagem de sucesso ou erro</returns>
+            dominio/api/Funcionarios/1
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.FuncionariosController.GetByName(System.String)">
+            <summary>
+            Lista todos os funcionários através de uma palavra-chave
+            </summary>
+            <param name="busca">Palavra-chave que será utilizada na busca</param>
+            <returns>Retorna uma lista de funcionários encontrados</returns>
+            dominio/api/Funcionarios/pesquisar/palavra-chave
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.FuncionariosController.GetFullName">
+            <summary>
+            Lista todos os funcionários com os nomes completos
+            </summary>
+            <returns>Retorna uma lista de funcionários</returns>
+            dominio/api/Funcionarios/nomescompletos
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.FuncionariosController.GetOrderBy(System.String)">
+            <summary>
+            Lista todos os funcionários de maneira ordenada pelo nome
+            </summary>
+            <param name="ordem">String que define a ordenação (crescente ou descrescente)</param>
+            <returns>Retorna uma lista ordenada de funcionários</returns>
+            dominio/api/Funcionarios/ordenacao/asc
+        </member>
+        <member name="T:senai.Peoples.WebApi.Controllers.LoginController">
+            <summary>
+            Controller responsável pelo Login
+            </summary>
+        </member>
+        <member name="P:senai.Peoples.WebApi.Controllers.LoginController._usuarioRepository">
+            <summary>
+            Cria um objeto _usuarioRepository que irá receber todos os métodos definidos na interface
+            </summary>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.LoginController.#ctor">
+            <summary>
+            Instancia este objeto para que haja a referência aos métodos no repositório
+            </summary>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.LoginController.Post(senai.Peoples.WebApi.ViewModels.LoginViewModel)">
+            <summary>
+            Valida o usuário
+            </summary>
+            <param name="login">Objeto login que contém o e-mail e a senha do usuário</param>
+            <returns>Retorna um token com as informações do usuário</returns>
+        </member>
+        <member name="T:senai.Peoples.WebApi.Controllers.TiposUsuarioController">
+            <summary>
+            Controller responsável pelos endpoints referentes aos tipos de usuário
+            </summary>
+        </member>
+        <member name="P:senai.Peoples.WebApi.Controllers.TiposUsuarioController._tipoUsuarioRepository">
+            <summary>
+            Cria um objeto _tipoUsuarioRepository que irá receber todos os métodos definidos na interface
+            </summary>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.TiposUsuarioController.#ctor">
+            <summary>
+            Instancia este objeto para que haja a referência aos métodos no repositório
+            </summary>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.TiposUsuarioController.Get">
+            <summary>
+            Lista todos os tipos de usuário
+            </summary>
+            <returns>Retorna uma lista de tipos de usuário e um status code 200 - Ok</returns>
+            dominio/api/TiposUsuario
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.TiposUsuarioController.Post(senai.Peoples.WebApi.Domains.TipoUsuarioDomain)">
+            <summary>
+            Cadastra um novo tipo de usuário
+            </summary>
+            <param name="novoTipoUsuario">Objeto novoTipoUsuario que será cadastrado</param>
+            <returns>Retorna os dados que foram enviados para cadastro e um status code 201 - Created</returns>
+            dominio/api/TiposUsuario
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.TiposUsuarioController.GetById(System.Int32)">
+            <summary>
+            Busca um tipo de usuário através do seu ID
+            </summary>
+            <param name="id">ID do tipo de usuário que será buscado</param>
+            <returns>Retorna um tipo de usuário buscado ou NotFound caso nenhum seja encontrado</returns>
+            dominio/api/TiposUsuario/1
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.TiposUsuarioController.Put(System.Int32,senai.Peoples.WebApi.Domains.TipoUsuarioDomain)">
+            <summary>
+            Atualiza um tipo de usuário existente
+            </summary>
+            <param name="id">ID do tipo de usuário que será atualizado</param>
+            <param name="tipoUsuarioAtualizado">Objeto tipoUsuarioAtualizado que será atualizado</param>
+            <returns>Retorna um status code</returns>
+            dominio/api/TiposUsuario/1
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.TiposUsuarioController.Delete(System.Int32)">
+            <summary>
+            Deleta um tipo de usuário
+            </summary>
+            <param name="id">ID do tipo de usuário que será deletado</param>
+            <returns>Retorna um status code com uma mensagem de sucesso ou erro</returns>
+            dominio/api/TiposUsuario/1
+        </member>
+        <member name="T:senai.Peoples.WebApi.Controllers.UsuariosController">
+            <summary>
+            Controller responsável pelos endpoints referentes aos usuários
+            </summary>
+        </member>
+        <member name="P:senai.Peoples.WebApi.Controllers.UsuariosController._usuarioRepository">
+            <summary>
+            Cria um objeto _usuarioRepository que irá receber todos os métodos definidos na interface
+            </summary>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.UsuariosController.#ctor">
+            <summary>
+            Instancia este objeto para que haja a referência aos métodos no repositório
+            </summary>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.UsuariosController.Get">
+            <summary>
+            Lista todos os usuários
+            </summary>
+            <returns>Retorna uma lista de usuários e um status code 200 - Ok</returns>
+            dominio/api/Usuarios
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.UsuariosController.Post(senai.Peoples.WebApi.Domains.UsuarioDomain)">
+            <summary>
+            Cadastra um novo usuário
+            </summary>
+            <param name="novoUsuario">Objeto novoUsuario que será cadastrado</param>
+            <returns>Retorna os dados que foram enviados para cadastro e um status code 201 - Created</returns>
+            dominio/api/Usuarios
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.UsuariosController.GetById(System.Int32)">
+            <summary>
+            Busca um usuário através do seu ID
+            </summary>
+            <param name="id">ID do usuário que será buscado</param>
+            <returns>Retorna um usuário buscado ou NotFound caso nenhum seja encontrado</returns>
+            dominio/api/Usuarios/1
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.UsuariosController.Put(System.Int32,senai.Peoples.WebApi.Domains.UsuarioDomain)">
+            <summary>
+            Atualiza um usuário existente
+            </summary>
+            <param name="id">ID do usuário que será atualizado</param>
+            <param name="usuarioAtualizado">Objeto usuarioAtualizado que será atualizado</param>
+            <returns>Retorna um status code</returns>
+            dominio/api/Usuarios/1
+        </member>
+        <member name="M:senai.Peoples.WebApi.Controllers.UsuariosController.Delete(System.Int32)">
+            <summary>
+            Deleta um usuário
+            </summary>
+            <param name="id">ID do usuário que será deletado</param>
+            <returns>Retorna um status code com uma mensagem de sucesso ou erro</returns>
+            dominio/api/Usuarios/1
+        </member>
+        <member name="T:senai.Peoples.WebApi.Domains.FuncionarioDomain">
+            <summary>
+            Classe que representa a entidade Funcionarios
+            </summary>
+        </member>
+        <member name="T:senai.Peoples.WebApi.Domains.TipoUsuarioDomain">
+            <summary>
+            Classe que representa a entidade TiposUsuario
+            </summary>
+        </member>
+        <member name="T:senai.Peoples.WebApi.Domains.UsuarioDomain">
+            <summary>
+            Classe que representa a entidade Usuarios
+            </summary>
+        </member>
+        <member name="T:senai.Peoples.WebApi.Interfaces.IFuncionarioRepository">
+            <summary>
+            Interface responsável pelo repositório FuncionarioRepository
+            </summary>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Interfaces.IFuncionarioRepository.Listar">
+            <summary>
+            Lista todos os funcionários
+            </summary>
+            <returns>Retorna uma lista de funcionários</returns>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Interfaces.IFuncionarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um funcionário através do ID
+            </summary>
+            <param name="id">ID do funcionário que será buscado</param>
+            <returns>Retorna um funcionário buscado</returns>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Interfaces.IFuncionarioRepository.Cadastrar(senai.Peoples.WebApi.Domains.FuncionarioDomain)">
+            <summary>
+            Cadastra um novo funcionário
+            </summary>
+            <param name="novoFuncionario">Objeto novoFuncionario que será cadastrado</param>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Interfaces.IFuncionarioRepository.Atualizar(System.Int32,senai.Peoples.WebApi.Domains.FuncionarioDomain)">
+            <summary>
+            Atualiza um funcionário existente
+            </summary>
+            <param name="id">ID do funcionário que será atualizado</param>
+            <param name="funcionarioAtualizado">Objeto funcionarioAtualizado que será atualizado</param>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Interfaces.IFuncionarioRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um funcionário existente
+            </summary>
+            <param name="id">ID do funcionário que será deletado</param>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Interfaces.IFuncionarioRepository.BuscarPorNome(System.String)">
+            <summary>
+            Busca todos os funcionários que contenham uma palavra-chave
+            </summary>
+            <param name="nome">Palavra-chave que servirá de busca</param>
+            <returns>Retorna uma lista de funcionários encontrados</returns>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Interfaces.IFuncionarioRepository.ListarNomeCompleto">
+            <summary>
+            Lista todos os funcionários com os nomes completos
+            </summary>
+            <returns>Retorna uma lista de funcionários</returns>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Interfaces.IFuncionarioRepository.ListarOrdenado(System.String)">
+            <summary>
+            Lista todos os funcionários de maneira ordenada pelo nome
+            </summary>
+            <param name="ordem">String que define a ordenação (crescente ou descrescente)</param>
+            <returns>Retorna uma lista ordenada de funcionários</returns>
+        </member>
+        <member name="T:senai.Peoples.WebApi.Interfaces.ITipoUsuarioRepository">
+            <summary>
+            Interface responsável pelo repositório TipoUsuarioRepository
+            </summary>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Interfaces.ITipoUsuarioRepository.Listar">
+            <summary>
+            Lista todos os tipos de usuário
+            </summary>
+            <returns>Retorna uma lista de tipos de usuário</returns>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Interfaces.ITipoUsuarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um tipo de usuário através do ID
+            </summary>
+            <param name="id">ID do tipo de usuário que será buscado</param>
+            <returns>Retorna um tipo de usuário buscado</returns>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Interfaces.ITipoUsuarioRepository.Cadastrar(senai.Peoples.WebApi.Domains.TipoUsuarioDomain)">
+            <summary>
+            Cadastra um novo tipo de usuário
+            </summary>
+            <param name="novoTipoUsuario">Objeto novoTipoUsuario que será cadastrado</param>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Interfaces.ITipoUsuarioRepository.Atualizar(System.Int32,senai.Peoples.WebApi.Domains.TipoUsuarioDomain)">
+            <summary>
+            Atualiza um tipo de usuário existente
+            </summary>
+            <param name="id">ID do tipo de usuário que será alterado</param>
+            <param name="TipoUsuarioAtualizado">Objeto TipoUsuarioAtualizado que será alterado</param>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Interfaces.ITipoUsuarioRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um tipo de usuário existente
+            </summary>
+            <param name="id">ID do tipo de usuário que será deletado</param>
+        </member>
+        <member name="T:senai.Peoples.WebApi.Interfaces.IUsuarioRepository">
+            <summary>
+            Interface responsável pelo repositório UsuarioRepository
+            </summary>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Interfaces.IUsuarioRepository.Listar">
+            <summary>
+            Lista todos os usuários
+            </summary>
+            <returns>Retorna uma lista de usuários</returns>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Interfaces.IUsuarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um usuários através do ID
+            </summary>
+            <param name="id">ID do usuário que será buscado</param>
+            <returns>Retorna um usuário buscado</returns>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Interfaces.IUsuarioRepository.Cadastrar(senai.Peoples.WebApi.Domains.UsuarioDomain)">
+            <summary>
+            Cadastra um usuário
+            </summary>
+            <param name="novoUsuario">Objeto novoUsuario que será cadastrado</param>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Interfaces.IUsuarioRepository.Atualizar(System.Int32,senai.Peoples.WebApi.Domains.UsuarioDomain)">
+            <summary>
+            Atualiza um usuário existente
+            </summary>
+            <param name="id">ID do usuário que será alterado</param>
+            <param name="UsuarioAtualizado">Objeto UsuarioAtualizado que será alterado</param>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Interfaces.IUsuarioRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um usuário existente
+            </summary>
+            <param name="id">ID do usuário que será deletado</param>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Interfaces.IUsuarioRepository.BuscarPorEmailSenha(System.String,System.String)">
+            <summary>
+            Busca um usuário através do e-mail e da senha
+            </summary>
+            <param name="email">E-mail do usuário</param>
+            <param name="senha">Senha do usuário</param>
+            <returns>Retorna um usuário validado</returns>
+        </member>
+        <member name="T:senai.Peoples.WebApi.Repositories.FuncionarioRepository">
+            <summary>
+            Repositório dos Funcionários
+            </summary>
+        </member>
+        <member name="F:senai.Peoples.WebApi.Repositories.FuncionarioRepository.stringConexao">
+            <summary>
+            String de conexão com o banco de dados que recebe os parâmetros
+            </summary>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Repositories.FuncionarioRepository.Atualizar(System.Int32,senai.Peoples.WebApi.Domains.FuncionarioDomain)">
+            <summary>
+            Atualiza um funcionário existente
+            </summary>
+            <param name="id">ID do funcionário que será atualizado</param>
+            <param name="funcionarioAtualizado">Objeto funcionarioAtualizado que será atualizado</param>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Repositories.FuncionarioRepository.ListarNomeCompleto">
+            <summary>
+            Lista todos os funcionários com os nomes completos
+            </summary>
+            <returns>Retorna uma lista de funcionários</returns>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Repositories.FuncionarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um funcionário através do ID
+            </summary>
+            <param name="id">ID do funcionário que será buscado</param>
+            <returns>Retorna um funcionário buscado</returns>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Repositories.FuncionarioRepository.BuscarPorNome(System.String)">
+            <summary>
+            Busca uma lista de funcionários através do nome
+            </summary>
+            <param name="nome">Palavra-chave que será utilizada na busca</param>
+            <returns>Retorna uma lista de funcionários encontrados</returns>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Repositories.FuncionarioRepository.Cadastrar(senai.Peoples.WebApi.Domains.FuncionarioDomain)">
+            <summary>
+            Cadastra um novo funcionário
+            </summary>
+            <param name="novoFuncionario">Objeto novoFuncionario que será cadastrado</param>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Repositories.FuncionarioRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um funcionário existente
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Repositories.FuncionarioRepository.Listar">
+            <summary>
+            Lista todos os funcionários
+            </summary>
+            <returns>Retorna uma lista de funcionários</returns>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Repositories.FuncionarioRepository.ListarOrdenado(System.String)">
+            <summary>
+            Lista todos os funcionários de maneira ordenada pelo nome
+            </summary>
+            <param name="ordem">String que define a ordenação (crescente ou descrescente)</param>
+            <returns>Retorna uma lista ordenada de funcionários</returns>
+        </member>
+        <member name="T:senai.Peoples.WebApi.Repositories.TipoUsuarioRepository">
+            <summary>
+            Repositório dos Tipos de Usuários
+            </summary>
+        </member>
+        <member name="F:senai.Peoples.WebApi.Repositories.TipoUsuarioRepository.stringConexao">
+            <summary>
+            String de conexão com o banco de dados que recebe os parâmetros
+            </summary>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Repositories.TipoUsuarioRepository.Atualizar(System.Int32,senai.Peoples.WebApi.Domains.TipoUsuarioDomain)">
+            <summary>
+            Atualiza um tipo de usuário existente
+            </summary>
+            <param name="id">ID do tipo de usuário que será atualziado</param>
+            <param name="TipoUsuarioAtualizado">Objeto TipoUsuarioAtualizado que será alterado</param>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Repositories.TipoUsuarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um tipo de usuário através do ID
+            </summary>
+            <param name="id">ID do tipo de usuário que será buscado</param>
+            <returns>Retorna um tipo de usuário buscado</returns>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Repositories.TipoUsuarioRepository.Cadastrar(senai.Peoples.WebApi.Domains.TipoUsuarioDomain)">
+            <summary>
+            Cadastra um novo tipo de usuário
+            </summary>
+            <param name="novoTipoUsuario">Objeto novoTipoUsuario que será cadastrado</param>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Repositories.TipoUsuarioRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um tipo de usuário
+            </summary>
+            <param name="id">ID do tipo de usuário que será deletado</param>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Repositories.TipoUsuarioRepository.Listar">
+            <summary>
+            Lista todos os tipos de usuário
+            </summary>
+            <returns>Retorna uma lista de tipos de usuário</returns>
+        </member>
+        <member name="T:senai.Peoples.WebApi.Repositories.UsuarioRepository">
+            <summary>
+            Repositório dos Usuários
+            </summary>
+        </member>
+        <member name="F:senai.Peoples.WebApi.Repositories.UsuarioRepository.stringConexao">
+            <summary>
+            String de conexão com o banco de dados que recebe os parâmetros
+            </summary>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Repositories.UsuarioRepository.Atualizar(System.Int32,senai.Peoples.WebApi.Domains.UsuarioDomain)">
+            <summary>
+            Atualiza um usuário existente
+            </summary>
+            <param name="id">ID do usuário que será atualizado</param>
+            <param name="UsuarioAtualizado">Objeto UsuarioAtualizado que será alterado</param>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Repositories.UsuarioRepository.BuscarPorEmailSenha(System.String,System.String)">
+            <summary>
+            Valida o usuário
+            </summary>
+            <param name="email">E-mail do usuário</param>
+            <param name="senha">Senha do usuário</param>
+            <returns>Retorna um usuário validado</returns>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Repositories.UsuarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um usuário através do ID
+            </summary>
+            <param name="id">ID do usuário que será buscado</param>
+            <returns>Retorna um usuário buscado</returns>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Repositories.UsuarioRepository.Cadastrar(senai.Peoples.WebApi.Domains.UsuarioDomain)">
+            <summary>
+            Cadastra um novo usuário
+            </summary>
+            <param name="novoUsuario">Objeto novoUsuario que será cadastrado</param>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Repositories.UsuarioRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um usuário existente
+            </summary>
+            <param name="id">ID do usuário que será deletado</param>
+        </member>
+        <member name="M:senai.Peoples.WebApi.Repositories.UsuarioRepository.Listar">
+            <summary>
+            Lista todos os usuários
+            </summary>
+            <returns>Retorna uma lista de usuários</returns>
+        </member>
+        <member name="T:senai.Peoples.WebApi.ViewModels.LoginViewModel">
+            <summary>
+            Classe que representa um modelo para Login
+            </summary>
+        </member>
+    </members>
+</doc>
