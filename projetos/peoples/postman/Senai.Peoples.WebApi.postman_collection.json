@@ -235,27 +235,6 @@
 					"response": []
 				},
 				{
-					"name": "TiposUsuario.BuscarPorId",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:5000/api/TiposUsuario/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "5000",
-							"path": [
-								"api",
-								"TiposUsuario",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "TiposUsuario.Cadastrar",
 					"request": {
 						"method": "POST",
@@ -348,6 +327,27 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "TiposUsuario.BuscarPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/TiposUsuario/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"TiposUsuario",
+								"1"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"protocolProfileBehavior": {}
@@ -370,27 +370,6 @@
 							"path": [
 								"api",
 								"Usuarios"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Usuarios.BuscarPorId",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:5000/api/Usuarios/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "5000",
-							"path": [
-								"api",
-								"Usuarios",
-								"2"
 							]
 						}
 					},
@@ -427,6 +406,27 @@
 							"path": [
 								"api",
 								"Usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuarios.BuscarPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Usuarios/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Usuarios",
+								"2"
 							]
 						}
 					},
