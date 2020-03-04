@@ -1,0 +1,16 @@
+C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\exercicios\inlock\backend\Senai.InLock.WebApi\Senai.InLock.WebApi\bin\Debug\netcoreapp2.1\Senai.InLock.WebApi.deps.json
+C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\exercicios\inlock\backend\Senai.InLock.WebApi\Senai.InLock.WebApi\bin\Debug\netcoreapp2.1\Senai.InLock.WebApi.runtimeconfig.json
+C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\exercicios\inlock\backend\Senai.InLock.WebApi\Senai.InLock.WebApi\bin\Debug\netcoreapp2.1\Senai.InLock.WebApi.runtimeconfig.dev.json
+C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\exercicios\inlock\backend\Senai.InLock.WebApi\Senai.InLock.WebApi\bin\Debug\netcoreapp2.1\Senai.InLock.WebApi.dll
+C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\exercicios\inlock\backend\Senai.InLock.WebApi\Senai.InLock.WebApi\obj\Debug\netcoreapp2.1\Senai.InLock.WebApi.csprojAssemblyReference.cache
+C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\exercicios\inlock\backend\Senai.InLock.WebApi\Senai.InLock.WebApi\obj\Debug\netcoreapp2.1\Senai.InLock.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\exercicios\inlock\backend\Senai.InLock.WebApi\Senai.InLock.WebApi\obj\Debug\netcoreapp2.1\Senai.InLock.WebApi.RazorAssemblyInfo.cache
+C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\exercicios\inlock\backend\Senai.InLock.WebApi\Senai.InLock.WebApi\obj\Debug\netcoreapp2.1\Senai.InLock.WebApi.RazorAssemblyInfo.cs
+C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\exercicios\inlock\backend\Senai.InLock.WebApi\Senai.InLock.WebApi\obj\Debug\netcoreapp2.1\Senai.InLock.WebApi.AssemblyInfoInputs.cache
+C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\exercicios\inlock\backend\Senai.InLock.WebApi\Senai.InLock.WebApi\obj\Debug\netcoreapp2.1\Senai.InLock.WebApi.AssemblyInfo.cs
+C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\exercicios\inlock\backend\Senai.InLock.WebApi\Senai.InLock.WebApi\obj\Debug\netcoreapp2.1\Senai.InLock.WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\exercicios\inlock\backend\Senai.InLock.WebApi\Senai.InLock.WebApi\bin\Debug\netcoreapp2.1\Senai.InLock.WebApi.pdb
+C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\exercicios\inlock\backend\Senai.InLock.WebApi\Senai.InLock.WebApi\obj\Debug\netcoreapp2.1\Senai.InLock.WebApi.dll
+C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\exercicios\inlock\backend\Senai.InLock.WebApi\Senai.InLock.WebApi\obj\Debug\netcoreapp2.1\Senai.InLock.WebApi.pdb
+C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\exercicios\inlock\backend\Senai.InLock.WebApi\Senai.InLock.WebApi\bin\Debug\netcoreapp2.1\Senai.InLock.WebApi.xml
+C:\Users\saulo\Downloads\senai-dev-1s2020\sprint-2-backend\exercicios\inlock\backend\Senai.InLock.WebApi\Senai.InLock.WebApi\obj\Debug\netcoreapp2.1\Senai.InLock.WebApi.xml
