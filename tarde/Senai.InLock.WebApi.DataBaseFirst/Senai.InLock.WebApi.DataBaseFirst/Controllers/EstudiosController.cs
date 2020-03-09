@@ -44,7 +44,7 @@ namespace Senai.InLock.WebApi.DataBaseFirst.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            // Retora a resposta da requisição fazendo a chamada para o método
+            // Retorna a resposta da requisição fazendo a chamada para o método
             return Ok(_estudioRepository.Listar());
         }
 
@@ -73,6 +73,48 @@ namespace Senai.InLock.WebApi.DataBaseFirst.Controllers
 
             // Retorna um status code
             return StatusCode(201);
+        }
+
+        /// <summary>
+        /// Atualiza um estúdio existente
+        /// </summary>
+        /// <param name="id">ID do estúdio que será atualizado</param>
+        /// <param name="estudioAtualizado">Objeto com as novas informações</param>
+        /// <returns>Um status code 204 - No Content</returns>
+        [HttpPut("{id}")]
+        public IActionResult Put(int id, Estudios estudioAtualizado)
+        {
+            // Faz a chamada para o método
+            _estudioRepository.Atualizar(id, estudioAtualizado);
+
+            // Retorna um status code
+            return StatusCode(204);
+        }
+
+        /// <summary>
+        /// Deleta um estúdio existente
+        /// </summary>
+        /// <param name="id">ID do estúdio que será deletado</param>
+        /// <returns>Um status code 204 - No Content</returns>
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            // Faz a chamada para o método
+            _estudioRepository.Deletar(id);
+
+            // Retorna um status code
+            return StatusCode(204);
+        }
+
+        /// <summary>
+        /// Lista todos os estúdios com seus respectivos jogos
+        /// </summary>
+        /// <returns>Lista de estúdios com os jogos e um status code 200 - Ok</returns>
+        [HttpGet("Jogos")]
+        public IActionResult GetJogos()
+        {
+            // Retorna a resposta da requisição fazendo a chamada para o método
+            return Ok(_estudioRepository.ListarJogos());
         }
     }
 }

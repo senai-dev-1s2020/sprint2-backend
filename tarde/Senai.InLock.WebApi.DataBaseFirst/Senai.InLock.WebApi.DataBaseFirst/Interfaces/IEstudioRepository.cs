@@ -29,5 +29,23 @@ namespace Senai.InLock.WebApi.DataBaseFirst.Interfaces
         /// </summary>
         /// <param name="novoEstudio">Objeto novoEstudio que será cadastrado</param>
         void Cadastrar(Estudios novoEstudio);
+
+        /// <summary>
+        /// Atualiza um estúdio existente
+        /// </summary>
+        /// <param name="estudioAtualizado">Objeto com as novas informações</param>
+        void Atualizar(int id, Estudios estudioAtualizado);
+
+        /// <summary>
+        /// Deleta um estúdio existente
+        /// </summary>
+        /// <param name="id">ID do estúdio que será deletado</param>
+        void Deletar(int id);
+
+        /// <summary>
+        /// Lista todos os estúdios com a lista de jogos
+        /// </summary>
+        /// <returns>Lista de estúdios com os seus jogos</returns>
+        List<Estudios> ListarJogos();
     }
 }

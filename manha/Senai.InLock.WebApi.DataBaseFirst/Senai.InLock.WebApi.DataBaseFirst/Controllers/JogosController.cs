@@ -11,7 +11,7 @@ using Senai.InLock.WebApi.DataBaseFirst.Repositories;
 namespace Senai.InLock.WebApi.DataBaseFirst.Controllers
 {
     /// <summary>
-    /// Controller responsável pelos endpoints referentes aos estudios
+    /// Controller responsável pelos endpoints referentes aos jogos
     /// </summary>
 
     // Define que o tipo de resposta da API será no formato JSON
@@ -22,99 +22,111 @@ namespace Senai.InLock.WebApi.DataBaseFirst.Controllers
 
     // Define que é um controlador de API
     [ApiController]
-    public class EstudiosController : ControllerBase
+    public class JogosController : ControllerBase
     {
         /// <summary>
-        /// Cria um objeto _estudioRepository que irá receber todos os métodos definidos na interface
+        /// Cria um objeto _jogoRepository que irá receber todos os métodos definidos na interface
         /// </summary>
-        private IEstudioRepository _estudioRepository;
+        private IJogoRepository _jogoRepository;
 
         /// <summary>
         /// Instancia este objeto para que haja a referência aos métodos no repositório
         /// </summary>
-        public EstudiosController()
+        public JogosController()
         {
-            _estudioRepository = new EstudioRepository();
+            _jogoRepository = new JogoRepository();
         }
 
         /// <summary>
-        /// Lista todos os estúdios
+        /// Lista todos os jogos
         /// </summary>
-        /// <returns>Uma lista de estúdios e um status code 200 - Ok</returns>
+        /// <returns>Uma lista de jogos e um status code 200 - Ok</returns>
         [HttpGet]
         public IActionResult Get()
         {
             // Retorna a resposta da requisição fazendo a chamada para o método
-            return Ok(_estudioRepository.Listar());
+            return Ok(_jogoRepository.Listar());
         }
 
         /// <summary>
-        /// Busca um estúdio através do ID
+        /// Busca um jogo através do ID
         /// </summary>
-        /// <param name="id">ID do estúdio que será buscado</param>
+        /// <param name="id">ID do jogo que será buscado</param>
         /// <returns>Um estúdio buscado e um status code 200 - Ok</returns>
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
             // Retora a resposta da requisição fazendo a chamada para o método
-            return Ok(_estudioRepository.BuscarPorId(id));
+            return Ok(_jogoRepository.BuscarPorId(id));
         }
 
         /// <summary>
-        /// Cadastra um novo estúdio
+        /// Cadastra um novo jogo
         /// </summary>
-        /// <param name="novoEstudio">Objeto novoEstudio que será cadastrado</param>
+        /// <param name="novoJogo">Objeto novoJogo que será cadastrado</param>
         /// <returns>Um status code 201 - Created</returns>
         [HttpPost]
-        public IActionResult Post(Estudios novoEstudio)
+        public IActionResult Post(Jogos novoJogo)
         {
             // Faz a chamada para o método
-            _estudioRepository.Cadastrar(novoEstudio);
+            _jogoRepository.Cadastrar(novoJogo);
 
             // Retorna um status code
             return StatusCode(201);
         }
 
         /// <summary>
-        /// Atualiza um estúdio existente
+        /// Atualiza um jogo existente
         /// </summary>
-        /// <param name="id">ID do estúdio que será atualizado</param>
-        /// <param name="estudioAtualizado">Objeto com as novas informações</param>
+        /// <param name="id">ID do jogo que será atualizado</param>
+        /// <param name="jogoAtualizado">Objeto com as novas informações</param>
         /// <returns>Um status code 204 - No Content</returns>
         [HttpPut("{id}")]
-        public IActionResult Put(int id, Estudios estudioAtualizado)
+        public IActionResult Put(int id, Jogos jogoAtualizado)
         {
             // Faz a chamada para o método
-            _estudioRepository.Atualizar(id, estudioAtualizado);
+            _jogoRepository.Atualizar(id, jogoAtualizado);
 
             // Retorna um status code
             return StatusCode(204);
         }
 
         /// <summary>
-        /// Deleta um estúdio existente
+        /// Deleta um jogo existente
         /// </summary>
-        /// <param name="id">ID do estúdio que será deletado</param>
+        /// <param name="id">ID do jogo que será deletado</param>
         /// <returns>Um status code 204 - No Content</returns>
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             // Faz a chamada para o método
-            _estudioRepository.Deletar(id);
+            _jogoRepository.Deletar(id);
 
             // Retorna um status code
             return StatusCode(204);
         }
 
         /// <summary>
-        /// Lista todos os estúdios com seus respectivos jogos
+        /// Lista todos os jogos com as informações dos estúdios
         /// </summary>
-        /// <returns>Lista de estúdios com os jogos e um status code 200 - Ok</returns>
-        [HttpGet("Jogos")]
-        public IActionResult GetJogos()
+        /// <returns>Uma lista de jogos</returns>
+        [HttpGet("Estudios")]
+        public IActionResult GetEstudios()
         {
             // Retorna a resposta da requisição fazendo a chamada para o método
-            return Ok(_estudioRepository.ListarJogos());
+            return Ok(_jogoRepository.ListarComEstudios());
+        }
+
+        /// <summary>
+        /// Lista todos os jogos de um determinado estúdio
+        /// </summary>
+        /// <param name="id">ID do estúdio do qual os jogos serão listados</param>
+        /// <returns>Uma lista de jogos</returns>
+        [HttpGet("Estudios/{id}")]
+        public IActionResult GetUmEstudio(int id)
+        {
+            // Retorna a resposta da requisição fazendo a chamada para o método
+            return Ok(_jogoRepository.ListarUmEstudio(id));
         }
     }
 }

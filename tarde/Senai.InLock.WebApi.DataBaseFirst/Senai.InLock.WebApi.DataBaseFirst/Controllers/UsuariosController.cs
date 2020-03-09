@@ -11,7 +11,7 @@ using Senai.InLock.WebApi.DataBaseFirst.Repositories;
 namespace Senai.InLock.WebApi.DataBaseFirst.Controllers
 {
     /// <summary>
-    /// Controller responsável pelos endpoints referentes aos estudios
+    /// Controller responsável pelos endpoints referentes aos usuários
     /// </summary>
 
     // Define que o tipo de resposta da API será no formato JSON
@@ -22,99 +22,88 @@ namespace Senai.InLock.WebApi.DataBaseFirst.Controllers
 
     // Define que é um controlador de API
     [ApiController]
-    public class EstudiosController : ControllerBase
+    public class UsuariosController : ControllerBase
     {
         /// <summary>
-        /// Cria um objeto _estudioRepository que irá receber todos os métodos definidos na interface
+        /// Cria um objeto _usuarioRepository que irá receber todos os métodos definidos na interface
         /// </summary>
-        private IEstudioRepository _estudioRepository;
+        private IUsuarioRepository _usuarioRepository;
 
         /// <summary>
         /// Instancia este objeto para que haja a referência aos métodos no repositório
         /// </summary>
-        public EstudiosController()
+        public UsuariosController()
         {
-            _estudioRepository = new EstudioRepository();
+            _usuarioRepository = new UsuarioRepository();
         }
 
         /// <summary>
-        /// Lista todos os estúdios
+        /// Lista todos os usuários
         /// </summary>
-        /// <returns>Uma lista de estúdios e um status code 200 - Ok</returns>
+        /// <returns>Uma lista de usuários e um status code 200 - Ok</returns>
         [HttpGet]
         public IActionResult Get()
         {
-            // Retorna a resposta da requisição fazendo a chamada para o método
-            return Ok(_estudioRepository.Listar());
+            // Retora a resposta da requisição fazendo a chamada para o método
+            return Ok(_usuarioRepository.Listar());
         }
 
         /// <summary>
-        /// Busca um estúdio através do ID
+        /// Busca um usuário através do ID
         /// </summary>
-        /// <param name="id">ID do estúdio que será buscado</param>
-        /// <returns>Um estúdio buscado e um status code 200 - Ok</returns>
+        /// <param name="id">ID do usuário que será buscado</param>
+        /// <returns>Um usuário buscado e um status code 200 - Ok</returns>
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
             // Retora a resposta da requisição fazendo a chamada para o método
-            return Ok(_estudioRepository.BuscarPorId(id));
+            return Ok(_usuarioRepository.BuscarPorId(id));
         }
 
         /// <summary>
-        /// Cadastra um novo estúdio
+        /// Cadastra um novo usuário
         /// </summary>
-        /// <param name="novoEstudio">Objeto novoEstudio que será cadastrado</param>
+        /// <param name="novoUsuario">Objeto com as informações</param>
         /// <returns>Um status code 201 - Created</returns>
         [HttpPost]
-        public IActionResult Post(Estudios novoEstudio)
+        public IActionResult Post(Usuarios novoUsuario)
         {
             // Faz a chamada para o método
-            _estudioRepository.Cadastrar(novoEstudio);
+            _usuarioRepository.Cadastrar(novoUsuario);
 
             // Retorna um status code
             return StatusCode(201);
         }
 
         /// <summary>
-        /// Atualiza um estúdio existente
+        /// Atualiza um usuário existente
         /// </summary>
-        /// <param name="id">ID do estúdio que será atualizado</param>
-        /// <param name="estudioAtualizado">Objeto com as novas informações</param>
+        /// <param name="id">ID do usuário que será atualizado</param>
+        /// <param name="usuarioAtualizado">Objeto com as novas informações</param>
         /// <returns>Um status code 204 - No Content</returns>
         [HttpPut("{id}")]
-        public IActionResult Put(int id, Estudios estudioAtualizado)
+        public IActionResult Put(int id, Usuarios usuarioAtualizado)
         {
             // Faz a chamada para o método
-            _estudioRepository.Atualizar(id, estudioAtualizado);
+            _usuarioRepository.Atualizar(id, usuarioAtualizado);
 
             // Retorna um status code
             return StatusCode(204);
         }
 
         /// <summary>
-        /// Deleta um estúdio existente
+        /// Deleta um usuário
         /// </summary>
-        /// <param name="id">ID do estúdio que será deletado</param>
+        /// <param name="id">ID do usuário que será deletado</param>
         /// <returns>Um status code 204 - No Content</returns>
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             // Faz a chamada para o método
-            _estudioRepository.Deletar(id);
+            _usuarioRepository.Deletar(id);
 
             // Retorna um status code
             return StatusCode(204);
-        }
-
-        /// <summary>
-        /// Lista todos os estúdios com seus respectivos jogos
-        /// </summary>
-        /// <returns>Lista de estúdios com os jogos e um status code 200 - Ok</returns>
-        [HttpGet("Jogos")]
-        public IActionResult GetJogos()
-        {
-            // Retorna a resposta da requisição fazendo a chamada para o método
-            return Ok(_estudioRepository.ListarJogos());
         }
     }
 }
