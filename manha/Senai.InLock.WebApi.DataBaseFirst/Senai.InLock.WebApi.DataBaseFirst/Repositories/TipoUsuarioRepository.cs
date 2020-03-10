@@ -55,7 +55,7 @@ namespace Senai.InLock.WebApi.DataBaseFirst.Repositories
         public void Cadastrar(TiposUsuario novoTipoUsuario)
         {
             // Adiciona um novo tipo de usuário
-            ctx.Add(novoTipoUsuario);
+            ctx.TiposUsuario.Add(novoTipoUsuario);
 
             // Salva as informações para serem gravas no banco
             ctx.SaveChanges();

@@ -57,7 +57,7 @@ namespace Senai.InLock.WebApi.DataBaseFirst.Repositories
         public void Cadastrar(Usuarios novoUsuario)
         {
             // Adiciona um novo usuário
-            ctx.Add(novoUsuario);
+            ctx.Usuarios.Add(novoUsuario);
 
             // Salva as informações para serem gravas no banco
             ctx.SaveChanges();

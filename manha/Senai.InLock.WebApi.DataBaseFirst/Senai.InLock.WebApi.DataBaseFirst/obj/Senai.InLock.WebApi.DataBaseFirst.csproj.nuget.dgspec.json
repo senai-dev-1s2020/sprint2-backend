@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Works\\senai_132\\senai-dev-1s2020\\sprint-2-backend\\03_efcore\\inlock\\backend\\Senai.InLock.WebApi.DataBaseFirst\\Senai.InLock.WebApi.DataBaseFirst\\Senai.InLock.WebApi.DataBaseFirst.csproj": {}
+    "E:\\Works\\senai_132\\senai-dev-1s2020\\sprint-2-backend\\03_efcore\\01.inlock\\backend\\Senai.InLock.WebApi.DataBaseFirst\\Senai.InLock.WebApi.DataBaseFirst\\Senai.InLock.WebApi.DataBaseFirst.csproj": {}
   },
   "projects": {
-    "E:\\Works\\senai_132\\senai-dev-1s2020\\sprint-2-backend\\03_efcore\\inlock\\backend\\Senai.InLock.WebApi.DataBaseFirst\\Senai.InLock.WebApi.DataBaseFirst\\Senai.InLock.WebApi.DataBaseFirst.csproj": {
+    "E:\\Works\\senai_132\\senai-dev-1s2020\\sprint-2-backend\\03_efcore\\01.inlock\\backend\\Senai.InLock.WebApi.DataBaseFirst\\Senai.InLock.WebApi.DataBaseFirst\\Senai.InLock.WebApi.DataBaseFirst.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Works\\senai_132\\senai-dev-1s2020\\sprint-2-backend\\03_efcore\\inlock\\backend\\Senai.InLock.WebApi.DataBaseFirst\\Senai.InLock.WebApi.DataBaseFirst\\Senai.InLock.WebApi.DataBaseFirst.csproj",
+        "projectUniqueName": "E:\\Works\\senai_132\\senai-dev-1s2020\\sprint-2-backend\\03_efcore\\01.inlock\\backend\\Senai.InLock.WebApi.DataBaseFirst\\Senai.InLock.WebApi.DataBaseFirst\\Senai.InLock.WebApi.DataBaseFirst.csproj",
         "projectName": "Senai.InLock.WebApi.DataBaseFirst",
-        "projectPath": "E:\\Works\\senai_132\\senai-dev-1s2020\\sprint-2-backend\\03_efcore\\inlock\\backend\\Senai.InLock.WebApi.DataBaseFirst\\Senai.InLock.WebApi.DataBaseFirst\\Senai.InLock.WebApi.DataBaseFirst.csproj",
+        "projectPath": "E:\\Works\\senai_132\\senai-dev-1s2020\\sprint-2-backend\\03_efcore\\01.inlock\\backend\\Senai.InLock.WebApi.DataBaseFirst\\Senai.InLock.WebApi.DataBaseFirst\\Senai.InLock.WebApi.DataBaseFirst.csproj",
         "packagesPath": "C:\\Users\\saulo\\.nuget\\packages\\",
-        "outputPath": "E:\\Works\\senai_132\\senai-dev-1s2020\\sprint-2-backend\\03_efcore\\inlock\\backend\\Senai.InLock.WebApi.DataBaseFirst\\Senai.InLock.WebApi.DataBaseFirst\\obj\\",
+        "outputPath": "E:\\Works\\senai_132\\senai-dev-1s2020\\sprint-2-backend\\03_efcore\\01.inlock\\backend\\Senai.InLock.WebApi.DataBaseFirst\\Senai.InLock.WebApi.DataBaseFirst\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

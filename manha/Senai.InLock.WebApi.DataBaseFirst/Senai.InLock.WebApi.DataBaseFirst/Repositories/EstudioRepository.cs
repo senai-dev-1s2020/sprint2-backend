@@ -28,8 +28,12 @@ namespace Senai.InLock.WebApi.DataBaseFirst.Repositories
             // Busca um estúdio através do id
             Estudios estudioBuscado = ctx.Estudios.Find(id);
 
-            // Atribui os novos valores ao campos existentes
-            estudioBuscado.NomeEstudio = estudioAtualizado.NomeEstudio;
+            // Verifica se o nome do estúdio foi informado
+            if (estudioAtualizado.NomeEstudio != null)
+            {
+                // Atribui os novos valores ao campos existentes
+                estudioBuscado.NomeEstudio = estudioAtualizado.NomeEstudio;
+            }
 
             // Atualiza o estúdio que foi buscado
             ctx.Estudios.Update(estudioBuscado);
