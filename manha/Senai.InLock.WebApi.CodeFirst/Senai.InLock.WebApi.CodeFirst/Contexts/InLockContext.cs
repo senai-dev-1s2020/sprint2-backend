@@ -40,7 +40,12 @@ namespace Senai.InLock.WebApi.CodeFirst.Contexts
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Define as entidades já com dados
-            modelBuilder.Entity<TiposUsuario>().HasData(
+            modelBuilder.Entity<TiposUsuario>(entity => {
+                entity
+                .HasIndex(tu => tu.Titulo)
+                .IsUnique();
+
+                entity.HasData(
                 new TiposUsuario
                 {
                     IdTipoUsuario = 1,
@@ -51,6 +56,7 @@ namespace Senai.InLock.WebApi.CodeFirst.Contexts
                     IdTipoUsuario = 2,
                     Titulo = "Cliente"
                 });
+            });
 
             modelBuilder.Entity<Usuarios>().HasData(
                 new Usuarios

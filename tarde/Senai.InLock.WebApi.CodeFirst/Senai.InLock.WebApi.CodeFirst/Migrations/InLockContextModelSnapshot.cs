@@ -27,7 +27,7 @@ namespace Senai.InLock.WebApi.CodeFirst.Migrations
 
                     b.Property<string>("NomeEstudio")
                         .IsRequired()
-                        .HasColumnType("varchar(150)");
+                        .HasColumnType("VARCHAR(150)");
 
                     b.HasKey("IdEstudio");
 
@@ -46,7 +46,8 @@ namespace Senai.InLock.WebApi.CodeFirst.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime>("DataLancamento");
+                    b.Property<DateTime>("DataLancamento")
+                        .HasColumnType("DATE");
 
                     b.Property<string>("Descricao")
                         .IsRequired()
@@ -58,11 +59,9 @@ namespace Senai.InLock.WebApi.CodeFirst.Migrations
                         .IsRequired()
                         .HasColumnType("VARCHAR(150)");
 
-                    b.Property<string>("Valor")
-                        .IsRequired()
-                        .HasConversion(new ValueConverter<string, string>(v => default(string), v => default(string), new ConverterMappingHints(size: 64)))
+                    b.Property<decimal>("Valor")
                         .HasColumnName("Preco")
-                        .HasColumnType("text");
+                        .HasColumnType("DECIMAL (18,2)");
 
                     b.HasKey("IdJogo");
 
@@ -71,8 +70,8 @@ namespace Senai.InLock.WebApi.CodeFirst.Migrations
                     b.ToTable("Jogos");
 
                     b.HasData(
-                        new { IdJogo = 1, DataLancamento = new DateTime(2012, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), Descricao = "É um jogo que contém bastante ação e é viciante, seja você um novato ou um fã", IdEstudio = 1, NomeJogo = "Diablo 3", Valor = "99.00" },
-                        new { IdJogo = 2, DataLancamento = new DateTime(2018, 10, 26, 0, 0, 0, 0, DateTimeKind.Unspecified), Descricao = "Jogo eletrônico de ação-aventura western", IdEstudio = 2, NomeJogo = "Red Dead Redemption II", Valor = "120.00" }
+                        new { IdJogo = 1, DataLancamento = new DateTime(2012, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), Descricao = "É um jogo que contém bastante ação e é viciante, seja você um novato ou um fã", IdEstudio = 1, NomeJogo = "Diablo 3", Valor = 99.00m },
+                        new { IdJogo = 2, DataLancamento = new DateTime(2018, 10, 26, 0, 0, 0, 0, DateTimeKind.Unspecified), Descricao = "Jogo eletrônico de ação-aventura western", IdEstudio = 2, NomeJogo = "Red Dead Redemption II", Valor = 120.00m }
                     );
                 });
 
@@ -87,6 +86,9 @@ namespace Senai.InLock.WebApi.CodeFirst.Migrations
                         .HasColumnType("VARCHAR(255)");
 
                     b.HasKey("IdTipoUsuario");
+
+                    b.HasIndex("Titulo")
+                        .IsUnique();
 
                     b.ToTable("TiposUsuario");
 
