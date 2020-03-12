@@ -1,0 +1,14 @@
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\tarde\Senai.Gufi.WebApi\Senai.Gufi.WebApi\bin\Debug\netcoreapp2.1\Senai.Gufi.WebApi.deps.json
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\tarde\Senai.Gufi.WebApi\Senai.Gufi.WebApi\bin\Debug\netcoreapp2.1\Senai.Gufi.WebApi.runtimeconfig.json
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\tarde\Senai.Gufi.WebApi\Senai.Gufi.WebApi\bin\Debug\netcoreapp2.1\Senai.Gufi.WebApi.runtimeconfig.dev.json
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\tarde\Senai.Gufi.WebApi\Senai.Gufi.WebApi\bin\Debug\netcoreapp2.1\Senai.Gufi.WebApi.dll
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\tarde\Senai.Gufi.WebApi\Senai.Gufi.WebApi\obj\Debug\netcoreapp2.1\Senai.Gufi.WebApi.csprojAssemblyReference.cache
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\tarde\Senai.Gufi.WebApi\Senai.Gufi.WebApi\obj\Debug\netcoreapp2.1\Senai.Gufi.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\tarde\Senai.Gufi.WebApi\Senai.Gufi.WebApi\obj\Debug\netcoreapp2.1\Senai.Gufi.WebApi.RazorAssemblyInfo.cache
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\tarde\Senai.Gufi.WebApi\Senai.Gufi.WebApi\obj\Debug\netcoreapp2.1\Senai.Gufi.WebApi.RazorAssemblyInfo.cs
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\tarde\Senai.Gufi.WebApi\Senai.Gufi.WebApi\obj\Debug\netcoreapp2.1\Senai.Gufi.WebApi.AssemblyInfoInputs.cache
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\tarde\Senai.Gufi.WebApi\Senai.Gufi.WebApi\obj\Debug\netcoreapp2.1\Senai.Gufi.WebApi.AssemblyInfo.cs
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\tarde\Senai.Gufi.WebApi\Senai.Gufi.WebApi\obj\Debug\netcoreapp2.1\Senai.Gufi.WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\tarde\Senai.Gufi.WebApi\Senai.Gufi.WebApi\bin\Debug\netcoreapp2.1\Senai.Gufi.WebApi.pdb
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\tarde\Senai.Gufi.WebApi\Senai.Gufi.WebApi\obj\Debug\netcoreapp2.1\Senai.Gufi.WebApi.dll
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\tarde\Senai.Gufi.WebApi\Senai.Gufi.WebApi\obj\Debug\netcoreapp2.1\Senai.Gufi.WebApi.pdb
