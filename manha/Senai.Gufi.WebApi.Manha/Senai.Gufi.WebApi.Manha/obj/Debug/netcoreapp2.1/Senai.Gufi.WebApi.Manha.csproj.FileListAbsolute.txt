@@ -1,0 +1,14 @@
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\manha\Senai.Gufi.WebApi.Manha\Senai.Gufi.WebApi.Manha\bin\Debug\netcoreapp2.1\Senai.Gufi.WebApi.Manha.deps.json
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\manha\Senai.Gufi.WebApi.Manha\Senai.Gufi.WebApi.Manha\bin\Debug\netcoreapp2.1\Senai.Gufi.WebApi.Manha.runtimeconfig.json
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\manha\Senai.Gufi.WebApi.Manha\Senai.Gufi.WebApi.Manha\bin\Debug\netcoreapp2.1\Senai.Gufi.WebApi.Manha.runtimeconfig.dev.json
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\manha\Senai.Gufi.WebApi.Manha\Senai.Gufi.WebApi.Manha\bin\Debug\netcoreapp2.1\Senai.Gufi.WebApi.Manha.dll
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\manha\Senai.Gufi.WebApi.Manha\Senai.Gufi.WebApi.Manha\obj\Debug\netcoreapp2.1\Senai.Gufi.WebApi.Manha.csprojAssemblyReference.cache
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\manha\Senai.Gufi.WebApi.Manha\Senai.Gufi.WebApi.Manha\obj\Debug\netcoreapp2.1\Senai.Gufi.WebApi.Manha.csproj.CoreCompileInputs.cache
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\manha\Senai.Gufi.WebApi.Manha\Senai.Gufi.WebApi.Manha\obj\Debug\netcoreapp2.1\Senai.Gufi.WebApi.Manha.RazorAssemblyInfo.cache
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\manha\Senai.Gufi.WebApi.Manha\Senai.Gufi.WebApi.Manha\obj\Debug\netcoreapp2.1\Senai.Gufi.WebApi.Manha.RazorAssemblyInfo.cs
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\manha\Senai.Gufi.WebApi.Manha\Senai.Gufi.WebApi.Manha\obj\Debug\netcoreapp2.1\Senai.Gufi.WebApi.Manha.AssemblyInfoInputs.cache
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\manha\Senai.Gufi.WebApi.Manha\Senai.Gufi.WebApi.Manha\obj\Debug\netcoreapp2.1\Senai.Gufi.WebApi.Manha.AssemblyInfo.cs
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\manha\Senai.Gufi.WebApi.Manha\Senai.Gufi.WebApi.Manha\obj\Debug\netcoreapp2.1\Senai.Gufi.WebApi.Manha.RazorTargetAssemblyInfo.cache
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\manha\Senai.Gufi.WebApi.Manha\Senai.Gufi.WebApi.Manha\bin\Debug\netcoreapp2.1\Senai.Gufi.WebApi.Manha.pdb
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\manha\Senai.Gufi.WebApi.Manha\Senai.Gufi.WebApi.Manha\obj\Debug\netcoreapp2.1\Senai.Gufi.WebApi.Manha.dll
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\manha\Senai.Gufi.WebApi.Manha\Senai.Gufi.WebApi.Manha\obj\Debug\netcoreapp2.1\Senai.Gufi.WebApi.Manha.pdb
