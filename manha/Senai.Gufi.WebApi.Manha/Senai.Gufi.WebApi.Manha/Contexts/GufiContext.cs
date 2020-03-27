@@ -1,9 +1,11 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace Senai.Gufi.WebApi.Manha.Domains
 {
+    /// <summary>
+    /// Classe responsável pelo contexto do projeto
+    /// Faz a comunicação entre API e Banco de Dados
+    /// </summary>
     public partial class GufiContext : DbContext
     {
         public GufiContext()
@@ -16,8 +18,6 @@ namespace Senai.Gufi.WebApi.Manha.Domains
         }
 
         public virtual DbSet<Evento> Evento { get; set; }
-        public virtual DbSet<Filmes> Filmes { get; set; }
-        public virtual DbSet<Generos> Generos { get; set; }
         public virtual DbSet<Instituicao> Instituicao { get; set; }
         public virtual DbSet<Presenca> Presenca { get; set; }
         public virtual DbSet<TipoEvento> TipoEvento { get; set; }
@@ -28,7 +28,8 @@ namespace Senai.Gufi.WebApi.Manha.Domains
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+                //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+                //optionsBuilder.UseSqlServer("Server=DESKTOP-NJ6LHN1\\SQLDEVELOPER; Database=Gufi_Manha; Integrated Security=True;");
                 optionsBuilder.UseSqlServer("Data source=DESKTOP-GCOFA7F\\SQLEXPRESS; Initial Catalog=Gufi_Manha; user Id=sa; pwd=sa@132;");
             }
         }
@@ -62,39 +63,6 @@ namespace Senai.Gufi.WebApi.Manha.Domains
                     .WithMany(p => p.Evento)
                     .HasForeignKey(d => d.IdTipoEvento)
                     .HasConstraintName("FK__Evento__IdTipoEv__6A30C649");
-            });
-
-            modelBuilder.Entity<Filmes>(entity =>
-            {
-                entity.HasKey(e => e.IdFilme);
-
-                entity.HasIndex(e => e.Titulo)
-                    .HasName("UQ__Filmes__7B406B563051A64A")
-                    .IsUnique();
-
-                entity.Property(e => e.Titulo)
-                    .IsRequired()
-                    .HasMaxLength(255)
-                    .IsUnicode(false);
-
-                entity.HasOne(d => d.IdGeneroNavigation)
-                    .WithMany(p => p.Filmes)
-                    .HasForeignKey(d => d.IdGenero)
-                    .HasConstraintName("FK__Filmes__IdGenero__19DFD96B");
-            });
-
-            modelBuilder.Entity<Generos>(entity =>
-            {
-                entity.HasKey(e => e.IdGenero);
-
-                entity.HasIndex(e => e.Nome)
-                    .HasName("UQ__Generos__7D8FE3B27DA425AE")
-                    .IsUnique();
-
-                entity.Property(e => e.Nome)
-                    .IsRequired()
-                    .HasMaxLength(255)
-                    .IsUnicode(false);
             });
 
             modelBuilder.Entity<Instituicao>(entity =>

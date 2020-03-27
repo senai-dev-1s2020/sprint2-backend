@@ -1,9 +1,11 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace Senai.Gufi.WebApi.Domains
 {
+    /// <summary>
+    /// Classe responsável pelo contexto do projeto
+    /// Faz a comunicação entre API e Banco de Dados
+    /// </summary>
     public partial class GufiContext : DbContext
     {
         public GufiContext()
@@ -26,7 +28,8 @@ namespace Senai.Gufi.WebApi.Domains
         {
             if (!optionsBuilder.IsConfigured)
             {
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+                //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+                //optionsBuilder.UseSqlServer("Server=DESKTOP-NJ6LHN1\\SQLDEVELOPER; Database=Gufi_Tarde; Integrated Security=True;");
                 optionsBuilder.UseSqlServer("Data source=DESKTOP-GCOFA7F\\SQLEXPRESS; Initial Catalog=Gufi_Tarde; user Id=sa; pwd=sa@132;");
             }
         }

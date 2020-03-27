@@ -12,3 +12,5 @@ C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\tarde\Senai.Guf
 C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\tarde\Senai.Gufi.WebApi\Senai.Gufi.WebApi\bin\Debug\netcoreapp2.1\Senai.Gufi.WebApi.pdb
 C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\tarde\Senai.Gufi.WebApi\Senai.Gufi.WebApi\obj\Debug\netcoreapp2.1\Senai.Gufi.WebApi.dll
 C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\tarde\Senai.Gufi.WebApi\Senai.Gufi.WebApi\obj\Debug\netcoreapp2.1\Senai.Gufi.WebApi.pdb
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\tarde\Senai.Gufi.WebApi\Senai.Gufi.WebApi\bin\Debug\netcoreapp2.1\Senai.Gufi.WebApi.xml
+C:\Users\saulo\Downloads\senai-dev-1s2020-alunos\sprint2-backend\tarde\Senai.Gufi.WebApi\Senai.Gufi.WebApi\obj\Debug\netcoreapp2.1\Senai.Gufi.WebApi.xml
